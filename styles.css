@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.colored {
+  color: #f2994a;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 100vh;
+  padding: 0 12px;
+}
+
+.title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 52px 0 12px 0;
+}
+
+.sub-heading {
+  max-width: 617px;
+  display: flex;
+  align-items: start;
+}
+
+.sub-heading img {
+  width: 18px;
+  height: 8px;
+  margin: 5px 12px 5px 0;
+}
+
+.sub-heading span {
+  max-width: 592px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+}
+
+.dish-image {
+  max-width: 980px;
+  height: 100%;
+  width: 100%;
+  margin: 48px 0;
+}
+
+.sub-content1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredients,
+.sub-content2 {
+  max-width: 579px;
+}
+
+.ingredients h2,
+.sub-content2 h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  margin: 14px 0;
+}
+
+.ingredients .item h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin: 5% 0;
+}
+
+.ingredients .item ul li {
+  list-style: none;
+  display: flex;
+  margin: 9px 0;
+}
+
+input.checkbox {
+  color: #828282;
+  margin-right: 17px;
+  height: 21px;
+  min-width: 21px;
+}
+
+.ingredients .item ul li p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.info-card {
+  max-width: 216px;
+  max-height: 367px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 56px 43px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 13px;
+}
+
+.card-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item div label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #bdbdbd;
+}
+
+.card-item div .duration {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.colored-duration {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2994a;
+}
+
+.sub-content2 ul {
+  margin-bottom: 36px;
+}
+
+.sub-content2 ul li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333333;
+  margin: 19px 0;
+  list-style: none;
+  display: flex;
+  align-items: start;
+}
+
+.marker {
+  background: #f2994a;
+  padding: 0 13px 6px 13px;
+  border-radius: 6px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.link-div {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #bdbdbd;
+}
+
+.link {
+  color: #bdbdbd;
+}
+
+footer {
+  margin-top: 93px;
+  margin-bottom: 24px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+@media screen and (max-width: 824px) {
+  .grid-item1 {
+    grid-area: card1;
+  }
+  .grid-item2 {
+    grid-area: card2;
+  }
+  .grid-item3 {
+    grid-area: card3;
+  }
+  .grid-item4 {
+    grid-area: card4;
+  }
+
+  .sub-content1 {
+    flex-direction: column-reverse;
+  }
+
+  .info-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    max-width: 100%;
+    grid-template-areas:
+      "card1 .     ."
+      "card2 card3 card4";
+    grid-row-gap: 30px;
+    margin-bottom: 5%;
+  }
+
+  .card-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .info-card {
+    grid-row-gap: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .sub-heading span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .ingredients h2,
+  .sub-content2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .ingredients .item h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .ingredients .item ul li p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .card-item div label {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .card-item div .duration {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .colored-duration {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .sub-content2 ul li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .link-div {
+    font-size: 12px;
+  }
+}
